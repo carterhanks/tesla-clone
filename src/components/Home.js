@@ -5,6 +5,9 @@ import modelS from "../images/model-s.jpeg";
 import modelY from "../images/model-y.jpeg";
 import model3 from "../images/model-3.jpeg";
 import modelX from "../images/model-x.jpeg";
+import solarPanels from "../images/solar-panels.jpeg";
+import solarRoof from "../images/solar-roof.jpeg";
+import accessories from "../images/accessories.jpeg";
 
 function Home() {
 	return (
@@ -36,6 +39,26 @@ function Home() {
 				backgroundImg={modelX}
 				leftBtnText="Custom Order"
 				rightBtnText="Existing Inventory"
+			/>
+			<Section
+				title="Solar Panels"
+				description="Lowest Cost Solar Panels in America"
+				backgroundImg={solarPanels}
+				leftBtnText="Order Now"
+				rightBtnText="Learn More"
+			/>
+			<Section
+				title="Solar Roof"
+				description="Produce Clean Energy From Your Roof"
+				backgroundImg={solarRoof}
+				leftBtnText="Order Now"
+				rightBtnText="Learn More"
+			/>
+			<Section
+				title="Accessories"
+				description=""
+				backgroundImg={accessories}
+				leftBtnText="Shop Now"
 			/>
 		</div>
 	);
