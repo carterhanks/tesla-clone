@@ -1,6 +1,6 @@
 import React from "react";
 import "../stylesheets/Section.css";
-import DownArrow from "../images/down-arrow.svg";
+import DownArrow from "../images/new-down-arrow.svg";
 
 function Section({
 	title,

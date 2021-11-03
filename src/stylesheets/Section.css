@@ -43,7 +43,7 @@
 	text-transform: uppercase;
 	font-size: 12px;
 	cursor: pointer;
-	margin: 1em;
+	margin-left: 1em;
 }
 
 .LeftButton {
@@ -59,12 +59,11 @@
 	text-transform: uppercase;
 	font-size: 12px;
 	cursor: pointer;
-	margin: 1em;
+	margin-right: 1em;
 }
 
 .DownArrow {
-	margin-top: 2em;
-	height: 5vh;
+	height: 10vh;
 	overflow-x: hidden;
 	animation: animateDown infinite 1.5s;
 }
