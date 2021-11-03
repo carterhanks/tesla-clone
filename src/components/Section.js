@@ -10,7 +10,7 @@ function Section({
 	backgroundImg
 }) {
 	return (
-		<div className="Wrap" bgImage={backgroundImg}>
+		<div className="Wrap" style={{ backgroundImage: `url(${backgroundImg})` }}>
 			<div className="ItemText">
 				<h1>{title}</h1>
 				<p>{description}</p>
