@@ -1,6 +1,6 @@
 import React from "react";
 import "../stylesheets/Section.css";
-import DownArrow from "../images/new-down-arrow.svg";
+import downArrow from "../images/new-down-arrow.svg";
 
 function Section({
 	title,
@@ -18,9 +18,9 @@ function Section({
 			<div className="Buttons">
 				<div className="ButtonGroup">
 					<div className="LeftButton">{leftBtnText}</div>
-					<div className="RightButton">{rightBtnText}</div>
+					{rightBtnText && <div className="RightButton">{rightBtnText}</div>}
 				</div>
-				<img src={DownArrow} className="DownArrow"></img>
+				<img src={downArrow} className="DownArrow"></img>
 			</div>
 		</div>
 	);
