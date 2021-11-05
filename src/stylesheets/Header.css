@@ -3,10 +3,12 @@
 	position: fixed;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	padding: 0 20px;
 	top: 0;
 	left: 0;
 	right: 0;
+	z-index: 1;
 }
 
 .header-menu {
@@ -23,6 +25,12 @@
 	flex-wrap: nowrap;
 }
 
+@media (max-width: 768px) {
+	.header-menu {
+		display: none;
+	}
+}
+
 .header-rightMenu {
 	display: flex;
 	align-items: center;
@@ -37,4 +45,37 @@
 	text-transform: uppercase;
 	margin-right: 10px;
 	flex-wrap: nowrap;
+}
+
+.header-burgerNav {
+	position: fixed;
+	top: 0%;
+	bottom: 0%;
+	right: 0%;
+	background-color: white;
+	width: 300px;
+	z-index: 1000;
+	list-style: none;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	text-align: start;
+}
+
+.header-burgerNav li {
+	padding: 15px 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.header-burgerNav a {
+	font-weight: 600;
+}
+
+.header-burgerNav-closeWrapper {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.header-burgerNav-closeWrapper-closeIcon {
+	cursor: pointer;
 }
