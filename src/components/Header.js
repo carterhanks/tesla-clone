@@ -1,6 +1,7 @@
 import React from "react";
 import "../stylesheets/Header.css";
 import logo from "../images/logo.svg";
+import MenuIcon from "@mui/icons-material/Menu";
 
 function Header() {
 	return (
@@ -9,18 +10,18 @@ function Header() {
 				<img src={logo} alt="Error Loading Logo" />
 			</a>
 			<div className="header-menu">
-				<p>
-					<a href="#">Model S</a>
-				</p>
-				<p>
-					<a href="#">Model 3</a>
-				</p>
-				<p>
-					<a href="#">Model X</a>
-				</p>
-				<p>
-					<a href="#">Model Y</a>
-				</p>
+				<a href="#">Model S</a>
+
+				<a href="#">Model 3</a>
+
+				<a href="#">Model X</a>
+
+				<a href="#">Model Y</a>
+			</div>
+			<div className="header-rightMenu">
+				<a href="#">Shop</a>
+				<a href="#">Tesla Account</a>
+				<div className="header-rightMenu-customMenu"></div>
 			</div>
 		</div>
 	);
