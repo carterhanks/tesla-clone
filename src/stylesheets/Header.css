@@ -23,6 +23,15 @@
 	flex-wrap: nowrap;
 }
 
+.header-rightMenu {
+	display: flex;
+	align-items: center;
+}
+
+.header-rightMenu-customMenu {
+	cursor: pointer;
+}
+
 .header-rightMenu a {
 	font-weight: 600;
 	text-transform: uppercase;

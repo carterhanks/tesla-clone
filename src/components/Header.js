@@ -21,7 +21,7 @@ function Header() {
 			<div className="header-rightMenu">
 				<a href="#">Shop</a>
 				<a href="#">Tesla Account</a>
-				<div className="header-rightMenu-customMenu"></div>
+				<MenuIcon className="header-rightMenu-customMenu"></MenuIcon>
 			</div>
 		</div>
 	);
