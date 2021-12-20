@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "../stylesheets/Header.css";
 import logo from "../images/logo.svg";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
 function Header() {
+	const [burgerStatus, setBurgerStatus] = useState(false);
+
 	return (
 		<div className="header-container">
 			<a>
@@ -24,7 +26,7 @@ function Header() {
 				<a href="#">Tesla Account</a>
 				<MenuIcon className="header-rightMenu-customMenu"></MenuIcon>
 			</div>
-			<div className="header-burgerNav">
+			<div className="header-burgerNav" show={burgerStatus}>
 				<div className="header-burgerNav-closeWrapper">
 					<CloseIcon className="header-burgerNav-closeWrapper-closeIcon" />
 				</div>
